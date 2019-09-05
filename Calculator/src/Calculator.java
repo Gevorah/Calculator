@@ -13,24 +13,25 @@ public class Calculator{
 				if(operator=='+'){
 				numberA = SimpleOperations.sum(numberA, numberB);
 				System.out.println(numberA);
-				} else if(operator=='-'){
+				}else if(operator=='-'){
 				numberA = SimpleOperations.subtraction (numberA, numberB);
 				System.out.println(numberA);
-				} else if(operator=='*'){
+				}else if(operator=='*'){
 				numberA = SimpleOperations.product(numberA, numberB);
 				System.out.println(numberA);
-				} else if(operator=='/'){
+				}else if(operator=='/'){
 				numberA = SimpleOperations.division(numberA, numberB);
 				System.out.println(numberA);
-				} else if(operator=='%'){
+				}else if(operator=='%'){
 				numberA = SimpleOperations.module(numberA, numberB);
 				System.out.println(numberA);
-				} else if(operator=='^'){
+				}else if(operator=='^'){
 				numberA = potentiation(numberA, numberB);
 				System.out.println(numberA);
 				}
-			} else{
+			}else{
 				finish = true;
 			}
 		}while(finish==false);
 	}
+}
