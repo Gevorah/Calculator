@@ -44,7 +44,7 @@ public class Converters{
 		while(i>=0){
 			char select = hexadecimal.charAt(j);
 			int evaluate = notation.indexOf(select);
-			result = evaluate*(int)(potentiation(16,i));
+			result = evaluate*(int)(ComplexOperations.power(16,i));
 			decimal += result;
 			i--;
 			j++;
@@ -65,5 +65,39 @@ public class Converters{
 			}
 		}while(result!=0);
 		return binary;
+	}
+	public static int binaryToDecimal(String binary){
+		int decimal = 0;
+		int i = 0;
+		int j = binary.length()-1;
+		while(i<binary.length()){
+			char select = binary.charAt(j);
+			if(select=='1'){
+				decimal += (int)(ComplexOperations.power(2,i));
+			}
+			j--;
+			i++;
+		}
+		return decimal;
+	}
+	public static String binaryToHexadecimal(String binary){
+		int decimal = binaryToDecimal(binary);
+		String hexadecimal = decimalToHexadecimal(decimal);
+		return hexadecimal;
+	}
+	public static String hexadecimalToBinary(String hexadecimal){
+		int decimal = hexadecimalToDecimal(hexadecimal);
+		String binary = decimalToBinary(decimal);
+		return binary;
+	}
+	public static double degreesToRadians(double numberA){
+		double result = 0;
+		result = (numberA/180)*Calculator.PI;
+		return result;
+	}
+	public static double radiansToDegrees(double numberA){
+		double result = 0;
+		result = (numberA/Calculator.PI)*180;
+		return result;
 	}
 }
