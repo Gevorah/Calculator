@@ -214,7 +214,9 @@ public class Calculator{
 			}
 		}while(finish==false);
 	}
-
+	/**
+	* <p> des: <p> Show a instructions for the correct use of the calculator.
+	*/
 	public static void usageGuide(){
 		System.out.println("Other Operations Functions"+"\n"+
 		"The operations are simultaneous. For example: 'input:1 input:* input:5 output:= output:5 input:+ input:1 output:= output:6 input:#'."+

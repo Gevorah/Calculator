@@ -3,10 +3,10 @@ public class TrigonometricOperations{
 	public static int  convertDude = 1;
 	
 	/**
-	<p> desc: <p> This method allow obtain the sin of any number.
-	<p> pre: <p> The degrees must be converted to radians.
-	<p> post: <p> The result has been obtain with the operation.
-	@return This method return the result of the operation.
+	* <p> desc: <p> This method allow obtain the sin of any number.
+	* <p> pre: <p> The degrees must be converted to radians.
+	* <p> post: <p> The result has been obtain with the operation.
+	* @return This method return the result of the operation.
 	*/
 	public static double sin(double number){
 		double result = 0;
@@ -21,10 +21,10 @@ public class TrigonometricOperations{
 	}
 	
 	/**
-	<p> desc: <p> This method allow obtain the cos of any number.
-	<p> pre: <p> The degrees must be converted to radians.
-	<p> post: <p> The result has beem obtain with the operation.
-	@return This method return the result of the operation.
+	* <p> desc: <p> This method allow obtain the cos of any number.
+	* <p> pre: <p> The degrees must be converted to radians.
+	* <p> post: <p> The result has beem obtain with the operation.
+	* @return This method return the result of the operation.
 	*/
 	public static double cos(double number){
 		double result = 0;
@@ -39,10 +39,10 @@ public class TrigonometricOperations{
 	}
 	
 	/**
-	<p> desc: <p> This method allow obtain the tan of any number.
-	<p> pre: <p> The degrees must be converted to radians.
-	<p> post: <p> The result has beem obtain with the operation.
-	@return This method return the result of the operation.
+	* <p> desc: <p> This method allow obtain the tan of any number.
+	* <p> pre: <p> The degrees must be converted to radians.
+	* <p> post: <p> The result has beem obtain with the operation.
+	* @return This method return the result of the operation.
 	*/
 	public static double tan(double number){
 		double result = 0;

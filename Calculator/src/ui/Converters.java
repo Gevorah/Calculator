@@ -1,11 +1,10 @@
 public class Converters{
 	
 	/**
-	<p> desc: <p> Given an number in decimal notation. This method allows convert the decimal notation to hexadecimal notation.
-	<p> pre: <p> The given number must be integer and must be located between zero and fifteen.
-	@param decimal This param  represents a number in decimal notation.
-	@throws NumberOutOfRange If the given number is lower than zero or greater than fifteen.
-	@return This method return the characters that represent the hexadecimal notation.
+	* <p> desc: <p> Given an number in decimal notation. This method allows convert the decimal notation to hexadecimal notation.
+	* <p> pre: <p> The given number must be integer and must be located between zero and fifteen.
+	* @param decimal This param  represents a number in decimal notation.
+	* @return This method return the characters that represent the hexadecimal notation.
 	*/
 	public static String decimalToHexadecimal(int decimal){
 		String hexadecimal = "";
@@ -25,11 +24,11 @@ public class Converters{
 	}
 	
 	/**
-	<p> desc: <p> This method allows evaluate and convert a number to hexadecimal character.
-	<p> pre: <p> The number to evaluate take from other method initialized.
-	<p> post: <p> The number has been convert to hexadecimal character.
-	@param decimal This parameter represents the given number.
-	@return This method return a character hexadecimal.
+	* <p> desc: <p> This method allows evaluate and convert a number to hexadecimal character.
+	* <p> pre: <p> The number to evaluate take from other method initialized.
+	* <p> post: <p> The number has been convert to hexadecimal character.
+	* @param decimal This parameter represents the given number.
+	* @return This method return a character hexadecimal.
 	*/
 	public static String decToHex(int decimal){
 		String hexadecimal = "";
@@ -52,11 +51,10 @@ public class Converters{
 	}
 	
 	/**
-	<p> desc: <p> Given a hexadecimal this method allows convert the hexadecimal notation to a number decimal.
-	<p> pre: <p> The hexadecimal must only have letters from A to F and integers.
-	@param hexadecimal This param represent a hexadecimal number.
-	@throws DiferentSymbol If the hexadecimal have different letters.
-	@return This method return a number in decimal notation.
+	* <p> desc: <p> Given a hexadecimal this method allows convert the hexadecimal notation to a number decimal.
+	* <p> pre: <p> The hexadecimal must only have letters from A to F and integers.
+	* @param hexadecimal This param represent a hexadecimal number.
+	* @return This method return a number in decimal notation.
 	*/
 	public static int hexadecimalToDecimal(String hexadecimal){
 		String notation = "0123456789ABCDEF";
@@ -77,12 +75,11 @@ public class Converters{
 	}
 	
 	/**
-	<p> desc: <p> This method allows convert the decimal notation to binary notation.
-	<p> pre: <p> The decimal must be a integer.
-	<p> post: <p> The binary has been obtain of the converter.
-	@param decimal This param represent a number in decimal notation.
-	@throws NegativeNumber If the number is negative throw this exception.
-	@return This method return a number in binary notation.
+	* <p> desc: <p> This method allows convert the decimal notation to binary notation.
+	* <p> pre: <p> The decimal must be a integer.
+	* <p> post: <p> The binary has been obtain of the converter.
+	* @param decimal This param represent a number in decimal notation.
+	* @return This method return a number in binary notation.
 	*/
 	public static String decimalToBinary(int decimal){
 		String binary = "";
@@ -101,12 +98,11 @@ public class Converters{
 	}
 	
 	/**
-	<p> desc: <p> This method allows convert the binary notation to decimal notation.
-	<p> pre: <p> The binary must be only numbers zero or one.
-	<p> post: <p> The binary has been convert to decimal.
-	@param binary This param represent a binary number.
-	@throws NumberOutOfRange If the binary number have letters or numbers different of zero or one.
-	@return This method return a number in decimal notation.
+	* <p> desc: <p> This method allows convert the binary notation to decimal notation.
+	* <p> pre: <p> The binary must be only numbers zero or one.
+	* <p> post: <p> The binary has been convert to decimal.
+	* @param binary This param represent a binary number.
+	* @return This method return a number in decimal notation.
 	*/
 	public static int binaryToDecimal(String binary){
 		int decimal = 0;
@@ -124,10 +120,10 @@ public class Converters{
 	}
 	
 	/**
-	<p> desc: <p> This method allows convert the degrees to radians.
-	<p> post: <p> The degrees has been converted to radians.
-	@param degrees This param represent a given degrees.
-	@return This method return a number in radians.
+	* <p> desc: <p> This method allows convert the degrees to radians.
+	* <p> post: <p> The degrees has been converted to radians.
+	* @param degrees This param represent a given degrees.
+	* @return This method return a number in radians.
 	*/
 	public static double degreesToRadians(double degrees){
 		double result = 0;
@@ -136,10 +132,10 @@ public class Converters{
 	}
 	
 	/**
-	<p> desc: <p> This method allows to convert the radians to degrees.
-	<p> post: <p> The radians has been coonvert to degrees.
-	@param radians This param represent a given radians.
-	@return This method return a number in degrees.
+	* <p> desc: <p> This method allows to convert the radians to degrees.
+	* <p> post: <p> The radians has been coonvert to degrees.
+	* @param radians This param represent a given radians.
+	* @return This method return a number in degrees.
 	*/
 	public static double radiansToDegrees(double radians){
 		double result = 0;
@@ -148,10 +144,10 @@ public class Converters{
 	}
 	
 	/**
-	<p> desc: <p> This method allows to convert the number to scientific notation.
-	<p> post: <p> The number has been convert to scientific notation.
-	@param number This param represent a given number.
-	@return This method return the number in scientific notation.
+	* <p> desc: <p> This method allows to convert the number to scientific notation.
+	* <p> post: <p> The number has been convert to scientific notation.
+	* @param number This param represent a given number.
+	* @return This method return the number in scientific notation.
 	*/
 	public static String scientificNotation(double number){
 		String result;
